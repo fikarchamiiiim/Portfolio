@@ -18,13 +18,14 @@ export default function Contact() {
                 Let's start some- <br />
                 thing <span className="text-primary italic">great</span>.
               </h2>
-              <form className="flex flex-col gap-4 max-w-lg">
+              <form action="https://formspree.io/f/mojrvjbp" method="POST" className="flex flex-col gap-4 max-w-lg">
+                <input type="hidden" name="_subject" value="New message from portfolio" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input type="text" placeholder="Name" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors" />
-                  <input type="email" placeholder="Email" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors" />
+                  <input type="text" name="name" placeholder="Name" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors" />
+                  <input type="email" name="email" placeholder="Email" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors" />
                 </div>
-                <textarea rows={4} placeholder="Tell me about your project" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
-                <button type="button" className="bg-white text-zinc-950 py-4 rounded-2xl font-bold hover:bg-zinc-200 transition-colors">
+                <textarea rows={4} name="message" placeholder="Tell me about your project" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+                <button type="submit" className="bg-white text-zinc-950 py-4 rounded-2xl font-bold hover:bg-zinc-200 transition-colors">
                   Send Message
                 </button>
               </form>
@@ -42,8 +43,7 @@ export default function Contact() {
               <div className="flex flex-col gap-3">
                 {[
                   { name: 'LinkedIn', href: PORTFOLIO_DATA.socials.linkedin },
-                  { name: 'Github', href: PORTFOLIO_DATA.socials.github },
-                  { name: 'Twitter', href: PORTFOLIO_DATA.socials.twitter },
+                  { name: 'Github', href: PORTFOLIO_DATA.socials.github }
                 ].map(social => (
                   <a key={social.name} href={social.href} className="flex items-center justify-between p-3 bg-zinc-800 rounded-xl text-sm text-zinc-300 hover:text-white hover:bg-zinc-700 transition-all">
                     <span>{social.name}</span>
