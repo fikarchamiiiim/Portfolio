@@ -18,7 +18,7 @@ export default function Contact() {
                 Let's start some- <br />
                 thing <span className="text-primary italic">great</span>.
               </h2>
-              <form action="https://formspree.io/f/mojrvjbp" method="POST" className="flex flex-col gap-4 max-w-lg">
+              <form action="https://formspree.io/f/xlgzdgyn" method="POST" className="flex flex-col gap-4 max-w-lg">
                 <input type="hidden" name="_subject" value="New message from portfolio" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input type="text" name="name" placeholder="Name" className="bg-zinc-800 border border-zinc-700/50 rounded-2xl p-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary transition-colors" />
