@@ -1,7 +1,7 @@
 export const PORTFOLIO_DATA = {
   name: "Zulfikar Chamim",
   role: "Full-Stack & AI Engineer.",
-  heroImage: "public/photo-resized.png", // Letakkan foto kamu di folder public/ dengan nama photo.jpg
+  heroImage: "https://raw.githubusercontent.com/fikarchamiiiim/Portfolio/9465255c5922832ee735115d144a7ac15cadfd0a/public/photo-resized.png", // Letakkan foto kamu di folder public/ dengan nama photo.jpg
   bio: "As a Full-Stack & AI Engineer, I thrive on connecting ideas with innovation, transforming complex concepts into robust, intelligent, and user-friendly solutions.",
   about: "I've been designing and developing websites for over 6 years. I love working at the intersection of technology and creativity, always striving to deliver exceptional user experiences.",
   email: "fikarchamiiiim@gmail.com",
